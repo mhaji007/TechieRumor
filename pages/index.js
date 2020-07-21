@@ -1,5 +1,6 @@
 import Error from 'next/error';
 import StoryList from '../Components/StoryList';
+import Layout from '../components/Layout';
 
 class Index extends React.Component {
 
@@ -27,14 +28,12 @@ class Index extends React.Component {
         }
 
         return (
-            <div>
-                <h1>
-                    Techie Rumor
-                </h1>
+            <Layout title="Techie Rumor" description="A news aggregator modeled after
+            Hacker News built with Next.js">
 
                 <StoryList stories = {stories}/>
                 
-            </div>
+            </Layout>
         )
 
     }
