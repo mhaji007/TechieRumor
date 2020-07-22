@@ -1,5 +1,7 @@
 import Error from 'next/error';
 import Layout from '../components/Layout';
+import CommentList from '../components/CommentList';
+
 
 class Story extends React.Component {
     
@@ -46,6 +48,17 @@ class Story extends React.Component {
                         </strong>
 
                     </div>
+
+                    {story.comments.length > 0 ? (
+                        <CommentList comments={story.comments}/>
+                    ): (
+                        <div>
+                            No comments for this story
+                        </div>
+                    )}
+
+                    </main>
+
                 <style jsx>
                     {`
                         main {
@@ -85,7 +98,6 @@ class Story extends React.Component {
                     
                     `}
                 </style>
-                </main>
             </Layout>
          );
     }
