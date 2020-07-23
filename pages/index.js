@@ -1,6 +1,6 @@
 import Error from 'next/error';
 import Link from 'next/link';
-import StoryList from '../Components/StoryList';
+import StoryList from '../components/StoryList';
 import Layout from '../components/Layout';
 
 class Index extends React.Component {
