@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "heroku-postbuild": "next build"
   },
   "dependencies": {
     "next": "9.4.4",
